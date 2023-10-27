@@ -1,5 +1,3 @@
-FROM alpine:3.4
-ARG HELLO_TO
-ENV HELLO_TO=${HELLO_TO}
-CMD echo "hello ${HELLO_TO}"
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
+COPY ./server /app
