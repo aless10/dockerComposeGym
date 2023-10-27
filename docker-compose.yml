@@ -1,7 +1,10 @@
 version: "3.7"
 services:
-  hello:
+  hello-fastapi:
     build:
       context: .
-      args:
-        - HELLO_TO=compose
+      dockerfile: Dockerfile
+    environment:
+      - PORT=8000
+    ports:
+      - "8000:8000"
