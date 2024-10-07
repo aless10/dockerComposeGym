@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.14
 ARG HELLO_TO
 ENV HELLO_TO=${HELLO_TO}
 CMD echo "hello ${HELLO_TO}"
