@@ -1,7 +1,6 @@
-version: "3.7"
 services:
   hello:
     build:
       context: .
       args:
-        - HELLO_TO=override
+        - HELLO_TO=compose
