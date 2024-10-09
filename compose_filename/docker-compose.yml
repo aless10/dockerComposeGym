@@ -1,0 +1,6 @@
+services:
+  hello:
+    build:
+      context: .
+      args:
+        - HELLO_TO=docker-compose
